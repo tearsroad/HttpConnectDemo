@@ -14,3 +14,10 @@ Android网络连接token失效，重新登录问题研究
  B(param1,param2){ 调用接口2，返回token失效，调用登录接口} <br/> 
 ..............................<br/> 
  login(username,pwd){登录，登录后的操作，如何返回A或B或其他等继续之前操作}
+
+
+#具体实现功能
+
+代码现在功能还不完善，如下图所示，实现功能：
+即使让本地token失效后，也能顺利一次性的获取到服务器用户信息
+![image](https://github.com/tearsroad/HttpConnectDemo/blob/master/device-2016-04-28-213511.png)
