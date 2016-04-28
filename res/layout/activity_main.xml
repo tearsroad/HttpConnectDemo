@@ -1,12 +1,31 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="${relativePackage}.${activityClass}" >
-
+    android:orientation="vertical" >
+	
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/tv_msg"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/hello_world" />
+    <Button 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onclick_login"
+        android:layout_marginTop="5dp"
+        android:text="登录"/>
+    <Button 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onclick_getMsg"
+        android:layout_marginTop="5dp"
+        android:text="通过token获取用户信息"/>
+    <Button 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onclick_cleartoken"
+        android:layout_marginTop="5dp"
+        android:text="让token失效"/>
 
-</RelativeLayout>
+</LinearLayout>
